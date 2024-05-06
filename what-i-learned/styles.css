@@ -1,0 +1,74 @@
+body {
+  display: grid;
+  font-family: 'Arial', sans-serif;
+  font-weight: bold;
+  place-items: center;
+  height: 100vh;
+  margin: 100px;
+  padding: 100px;
+}
+
+#gameBoard, #gameBoard-ex {
+  background: navy;
+  border-radius: 2px;
+  width: 30vw;
+  height: 30vw;
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: space-around;
+}
+
+.cell, .cell-ex {
+  background-color: pink;
+  flex: 1;
+  border: 2px solid navy;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  cursor: pointer;
+  font-size: 60px;
+}
+
+.row-1, .row-1-ex {
+  background-color: transparent;
+  flex: 1;
+  padding: 20px;
+  margin: -20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.row-2, .row-2-ex {
+  background-color: transparent;
+  flex: 1;
+  padding: 20px;
+  margin: -20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.row-3, .row-3-ex {
+  background-color: transparent;
+  flex: 1;
+  padding: 20px;
+  margin: -20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.firstExample {
+  padding-bottom: 30px;
+}
+
+.clear-btn {
+  font-size: 1.5rem;
+}
+
+#winOrLose {
+  font-size: 2rem;
+  color: navy;
+  text-shadow: 0.2em 0.2em darkred;
+}

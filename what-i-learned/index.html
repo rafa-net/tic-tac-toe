@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+    <h1>TIC TAC TOE</h1>
+    <p>This is my project. I am going to exhaust all the possibilities of winning and losing at this game, so I can set it up in programming correctly.
+    </p><ul>
+    <li>
+        From left to right, enumeration begins with column one, two and three.
+    </li>
+    <li>From top to bottom, enumeration begins with row one, two and three.
+    </li>
+    <li>This is counterintuitive to the source HTML, but consistent with the DOM.</li></ul>
+    <ol>
+        <li>When the game begins, the first player is 'X'. The objective is to make three consecutive marks in manner such:
+            <ul>
+                <li>Horizontally</li>
+                <li>Vertically</li>
+                <li>Diagonally</li>
+            </ul>
+        </ol>
+        <li>Each pink square is a <em>cell,</em> and the first one is numbered <em>zero (0).</em></li>
+        </li>
+        <li>This is because of <em>zero-based indexing,</em> which means that computers start counting from <em>zero (0).</em>
+        </li>
+        <li>So we introduce the concept of <em>array,</em> which enumerates the cells like so: <code>cells[0]</code>, <code>cells[1]</code>, <code>cells[2]</code>, <code>cells[3]</code>, <code>cells[4]</code>, <code>cells[5]</code>, <code>cells[6]</code>, <code>cells[7]</code>, <code>cells[8]</code>.
+        </li>
+
+
+        <li>
+            This enumeration, because of the DOM, starts from top to bottom, and goes left to right.
+
+        </li>
+        <li class="firstExample">
+            <h3>vertically</h3>
+            Let's start checking for a winner by looking at the cells which are numbered sequentially. This only happens vertically, because of the way the cells are numbered. This is because of peculiarities of the programming language JavaScript, which is used to program the game.
+        </li>
+
+            <div id="gameBoard-ex">
+                <div class="row-1-ex">
+                    <div class="cell-ex"></div>
+                    <div class="cell-ex"></div>
+                    <div class="cell-ex"></div>
+                </div>
+                <div class="row-2-ex">
+                    <div class="cell-ex"></div>
+                    <div class="cell-ex"></div>
+                    <div class="cell-ex"></div>
+                </div>
+                <div class="row-3-ex">
+                    <div class="cell-ex"></div>
+                    <div class="cell-ex"></div>
+                    <div class="cell-ex"></div>
+                </div>
+            </div>
+            <button class="clear-btn">clear</button>
+            
+            
+        </ol>
+    </header>
+    
+    <div id="gameBoard">
+        <span id="winOrLose"></span>
+        <div class="row-1">
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+        </div>
+        <div class="row-2">
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+        </div>
+        <div class="row-3">
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+        </div>
+    </div>
+    <button class="clear-btn">clear</button>
+<footer id="#footer"></footer>
+<script src="scripts.js"></script>
+</body>
+</html>
